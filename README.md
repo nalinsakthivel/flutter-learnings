@@ -1,4 +1,4 @@
-# demo_store
+# dev_app
 
 A new Flutter project.
 

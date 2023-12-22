@@ -1,7 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.demo_store">
-   <application
-        android:label="demo_store"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="dev_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

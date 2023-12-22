@@ -1,6 +1,6 @@
 {
-    "name": "demo_store",
-    "short_name": "demo_store",
+    "name": "dev_app",
+    "short_name": "dev_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
