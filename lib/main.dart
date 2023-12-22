@@ -29,30 +29,21 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+ void onPressed () {
+   print('hello');
+ }
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-      print(_counter);
-    });
-  }
-
-  @override
+  @override  late String h;
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: const Center(
+    return  Scaffold(
+        body: SafeArea(
+      child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+            Text('hi'),
             Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text('hello'),
                 Text(
@@ -62,14 +53,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             Text('hi'),
+            ElevatedButton(
+              onPressed: onPressed,
+              child: Text("hello"),
+            )
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
-    );
+    ));
   }
 }
